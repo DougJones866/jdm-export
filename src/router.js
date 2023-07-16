@@ -13,7 +13,7 @@ const router = createRouter({
     history: createWebHistory(),
     routes: [
         {
-            path: '/', component: Home, alias: '/home'
+            path: '/', component: Home, alias: '/jdm-export'
         },
         {
             path: "/home",
