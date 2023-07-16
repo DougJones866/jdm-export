@@ -5,9 +5,7 @@
       </div>
            <ul>
              <li>
-               <a class="home" href="/">
-                 Home
-               </a>
+              <router-link to="/">Home</router-link>
              </li>
              <li>
                <a class="pagelink" href="#projects">
@@ -20,9 +18,7 @@
                 </a>
               </li>
               <li>
-                <a class="pagelink" href="/about">
-                  About
-                </a>
+                <router-link to="/about">About</router-link>
               </li>
            </ul>
          </nav>
