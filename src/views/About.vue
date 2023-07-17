@@ -1,15 +1,18 @@
 <template>
   <div class="container">
-    <p>
-      As a company deeply rooted in the automotive industry, we understand the
-      allure and demand for JDM cars worldwide. We meticulously curate our
-      inventory to include an extensive selection of iconic and sought-after
-      models, encompassing legendary brands such as Honda, Toyota, Nissan,
-      Subaru, Mitsubishi, and more. From performance-driven sports cars to
-      reliable family vehicles, we cater to diverse preferences and
-      requirements.
-    </p>
-
+    <h2>Who We Are</h2>
+    <div id="about">
+      <div class="image"></div>
+      <p>
+        As a company deeply rooted in the automotive industry, we understand the
+        allure and demand for JDM cars worldwide. We meticulously curate our
+        inventory to include an extensive selection of iconic and sought-after
+        models, encompassing legendary brands such as Honda, Toyota, Nissan,
+        Subaru, Mitsubishi, and more. From performance-driven sports cars to
+        reliable family vehicles, we cater to diverse preferences and
+        requirements.
+      </p>
+    </div>
     <p>
       Our team of dedicated professionals works tirelessly to ensure that each
       exported JDM car meets the highest standards of quality, reliability, and
@@ -55,13 +58,30 @@
 </template>
 
 <script>
-export default {
-    
-};
+export default {};
 </script>
 
 <style scoped>
 p {
   text-align: center;
+}
+.container {
+    margin-bottom: 75px;
+}
+
+#about {
+  display: inline-flex;
+  margin: 15px;
+}
+
+#about p {
+  flex: 75%;
+}
+
+.image {
+  width: 250px;
+  height: 250px;
+  background-color: aqua;
+  flex: 25%;
 }
 </style>

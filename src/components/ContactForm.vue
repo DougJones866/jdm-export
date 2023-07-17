@@ -32,10 +32,7 @@ export default {
   },
   methods: {
     submitForm() {
-      // Perform your form submission logic here
-      // You can access the form data using this.formData
-
-      // Reset the form after submission
+      
       this.formData = {
         name: "",
         email: "",
@@ -53,10 +50,23 @@ export default {
 .contactform {
     margin-bottom: 50px;
     
+    
+}
+button {
+  padding: 10px 25px;
+  margin: 10px;
+  border: none;
+  background-color:#4d00ff;
+  color:white;
 }
 
+button:hover{
+  background-color:orangered ;
+}
+
+
 form {
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 input {
     width: 50%;
@@ -65,6 +75,10 @@ input {
 
 #question {
     width: 50%;
+}
+label {
+  display: block;
+  
 }
 
 </style>
