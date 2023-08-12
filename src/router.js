@@ -5,6 +5,7 @@ import {
 
 const Home = () => import('./views/Home.vue')
 const About = () => import('./views/About.vue')
+const Contact = () => import('./views/Contact.vue')
 
 
 
@@ -22,6 +23,10 @@ const router = createRouter({
         {
             path: "/about",
             component: About,
+        },
+        {
+            path: "/contact",
+            component: Contact,
         },
         // {
         //     path: '/:notFound(.*)',

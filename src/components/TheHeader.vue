@@ -1,25 +1,29 @@
 <template>
-  <div class="container">
-    <div class="logo">
-      <h1>JDM Exporters</h1>
-    </div>
-    <nav class="header">
-      <ul>
-        <li>
-          <router-link to="/">Home</router-link>
-        </li>
-        <li>
-          <a class="pagelink" href="#projects"> Services </a>
-        </li>
-        <li>
-          <a class="pagelink" href="#contact"> Contact </a>
-        </li>
-        <li>
-          <router-link to="/about">About</router-link>
-        </li>
-      </ul>
-    </nav>
-  </div>
+  <header role="banner" aria-label="site-wide-navigation" class="site-header">
+      <div class="container">
+        <nav role="navigation" aria-label="navigation" class="site-header-nav">
+          <ul class="site-nav-left">
+            <li>
+              <router-link to="/home" class="logo">
+                <!-- <box-icon type='solid' name='car'></box-icon> -->
+                <span class="logo1">JDM</span> Exportors
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/home">
+                Home
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/about" >About</router-link>
+            </li>
+            <li>
+              <router-link to="/contact">Contact Us</router-link>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 </template>
 
 <script>
@@ -27,57 +31,63 @@ export default {};
 </script>
 
 <style scoped>
-.container {
-  background-color: #fff;
-  top: 0;
-  padding: 20px 0;
-  align-content: center;
-  width: 100%;
-  
-  
-}
+
 .logo {
-  
-  display: inline-block;  
-  left:0;
-  
-   
-
+  font-weight: 700;
 }
-.header {
+.logo1 {
+  color:red;
+}
+
+.site-header {
+  background-color: #34474F;
+  padding: 30px 15px 0;
+}
+
+.site-header-nav {
+  align-items: center;
+  display: flex;
+}
+
+.site-nav-left,
+.site-nav-right {
+  align-items: center;
+  display: flex;
+}
+
+.site-nav-right {
+  float: right;
+  margin-left: auto;
+}
+
+.site-nav-left li:not(:first-child),
+.site-nav-right li {
+  font-weight: 700;
   display: inline-block;
-  font-size: 14px;
-  font-weight: 900;
-  margin-left: 20px;
-  
-  
+  line-height: 0;
 }
 
-.header li {
+.site-nav-mobile li {
   display: inline-block;
-  padding: 10px;
 }
 
-.header ul {
-  margin: 0;
-  padding: 0;
-  
-  display: flex; /* Display the navigation links horizontally */
+.site-nav-left li:not(:last-child),
+.site-nav-right li:not(:last-child),
+.site-nav-mobile li:not(:last-child) {
+  margin-right: 45px;
 }
 
-.header a {
-  color: #4a4a4a;
-}
-
-a.home {
-  color: #4d00ff;
+.site-nav-left .logo {
+  width: 120px;
 }
 
 a {
+  color: #FFFFFF;
   text-decoration: none;
 }
 
-h1 {
-  color: black;
+
+a:hover {
+  color: red;
 }
 </style>
