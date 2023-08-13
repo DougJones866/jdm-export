@@ -34,6 +34,7 @@ export default {};
 
 .logo {
   font-weight: 700;
+  
 }
 .logo1 {
   color:red;

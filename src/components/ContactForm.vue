@@ -14,26 +14,26 @@
                 <h2 class="section-header">Leave A Message</h2>
                 <form role="form" class="clearfix" @submit.prevent="checkForm">
                   <label>Your Name</label>
-                  <input type="text" placeholder="Full Name" class="input-error" />
+                  <input type="text" placeholder="Full Name"  v-model="name" />
                   <label>Your Email</label>
-                  <input type="email" placeholder="Email Address" />
+                  <input type="email" placeholder="Email Address" v-model="email" />
                   <label>Select Contact Reason</label>
-                  <select>
+                  <select v-model="selection">
                     <option selected disabled>Please Select One</option>
                     <option>Customer Service Question</option>
                     <option>Billing Question</option>
                     <option>Website Question</option>
                   </select>
                   <label>Question or Comments</label>
-                  <textarea placeholder="Provide as much detail as you can so we best assist you."></textarea>
+                  <textarea placeholder="Provide as much detail as you can so we best assist you." v-model="question"></textarea>
                   <input type="submit" value="Submit Message" class="button button-primary float-right" />
                 </form>
               </div>
               <div class="col-1-2">
                 <p><b>Our Location</b></p>
-                <img src="https://content.codecademy.com/programs/ui-design/color-ui/map.jpg" alt="Office Location" />
+                <img src="../assets/images/japan.png" alt="Office Location" />
                 <ul class="location-details">
-                  <li><b>Address:</b> 233 S Wacker Dr, Chicago, IL 60606</li>
+                  <li><b>Address:</b> Address Here</li>
                   <li><b>Phone:</b> (123) 456-7890</li>
                   <li><b>Email:</b> support@mail.com</li>
                 </ul>
@@ -52,6 +52,7 @@ export default {
       formData: {
         name: "",
         email: "",
+        selection: "",
         question: "",
       },
     };
@@ -62,6 +63,7 @@ export default {
       this.formData = {
         name: "",
         email: "",
+        selection: '',
         question: "",
       };
 
@@ -160,4 +162,6 @@ textarea {
 .input-error {
   border-color: #FC472E;
 }
+
+
 </style>
